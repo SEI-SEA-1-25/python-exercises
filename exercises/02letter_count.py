@@ -31,3 +31,29 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+def letter_count(string):
+  # this is where the unique letters
+  dd = {}
+  # strings can be looped like lists
+  for letter in string:
+    # check if the current string is in the dict or not
+    if letter not in dd:
+      # if the letter is not found, create it!
+      dd[letter] = 1
+    else: 
+      # otherwise, if it is found, increment it!
+      dd[letter] += 1
+
+  return dd
+
+soln = letter_count('some other strings too. Like Spam. 🐍🐍')
+
+print(soln)
+
+# we want this
+banana_dict = {
+  'b': 1,
+  'a': 3,
+  'n': 2
+}

@@ -9,3 +9,17 @@
 #
 # > 120
 #
+
+def factorial(n):
+  # start the running total
+  total = 1
+  # loop in the range up to n
+  for i in range(1, n + 1):
+    # multiply the total by the current number
+    total *= i
+    print(f'i is {i} total is {total}')
+
+  return total 
+
+solv = factorial(5)
+print(solv)
