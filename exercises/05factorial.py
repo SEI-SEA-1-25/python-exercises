@@ -27,7 +27,7 @@ def factorial(n):
   # solving with while loop
 
   # loop in the range up to n
-  i = 1
+  i = 1 # start i at 1
   while i <= n: # use <= to and skip the n + 1 thing with the while loop
     # multiply the total by the current number
     total *= i
